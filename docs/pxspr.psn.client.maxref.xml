@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes'?>
+<?xml-stylesheet href="./c74ref.xsl" type="text/xsl"?>
+
+<c74object name='pxspr.psn.client'>
+
+	<digest>Receive PosiStageNet data from a network server</digest>
+	<description>
+		
+	</description>
+
+
+	<!--METADATA-->
+
+	<metadatalist>
+		<metadata name='author'>Pixsper</metadata>
+		<metadata name='tag'>automation</metadata>
+		<metadata name='tag'>tracking</metadata>
+		<metadata name='tag'>network</metadata>
+	</metadatalist>
+
+
+	<!--ARGUMENTS-->
+
+	<objarglist>
+
+	</objarglist>
+
+
+	<!--MESSAGES-->
+
+	<methodlist>
+	
+	</methodlist>
+
+
+	<!--ATTRIBUTES-->
+
+	<attributelist>
+
+	</attributelist>
+
+
+	<!--RELATED-->
+
+	<seealsolist>
+		<seealso name='pxspr.psn.server' />
+	</seealsolist>
+
+
+</c74object>

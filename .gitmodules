@@ -1,0 +1,9 @@
+[submodule "lib/max-sdk"]
+	path = lib/max-sdk
+	url = https://github.com/Cycling74/max-sdk
+[submodule "lib/psn-cpp"]
+	path = lib/psn-cpp
+	url = https://github.com/vyv/psn-cpp
+[submodule "lib/asio"]
+	path = lib/asio
+	url = https://github.com/chriskohlhoff/asio/

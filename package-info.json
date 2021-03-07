@@ -1,0 +1,23 @@
+{
+	"author" : "Pixsper",
+	"description" : "Objects for sending/receiving PosiStageNet data over a network",
+	"max_version_min" : "8.0", "max_version_max" : "none",
+	"name" : "jit.ndi",
+	"os" : {
+		"macintosh" : {
+			"platform" : [ "x64" ],
+			"min_version" : "none"
+		},
+		"windows" : {
+			"platform" : [ "x64" ],
+			"min_version" : "none"
+		}
+	},
+	"package_extra" : {
+		"reverse_domain" : "com.pixsper",
+		"copyright" : "Copyright (c) 2021 Pixsper Ltd."
+	},
+	"tags" : [ ],
+	"version" : "0.2.0",
+	"website" : "https://github.com/pixsper/pxspr.psn"
+}

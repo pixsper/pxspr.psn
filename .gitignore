@@ -348,3 +348,14 @@ MigrationBackup/
 
 # Ionide (cross platform F# VS Code tools) working folder
 .ionide/
+
+# XCode project files
+xcuserdata/
+*.xcscmblueprint
+*.xccheckout
+
+# Max Package folders
+bin
+inter
+externals
+support
