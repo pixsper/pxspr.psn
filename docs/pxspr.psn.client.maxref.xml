@@ -19,16 +19,19 @@
 	</metadatalist>
 
 
-	<!--ARGUMENTS-->
-
-	<objarglist>
-
-	</objarglist>
-
-
 	<!--MESSAGES-->
 
 	<methodlist>
+	
+		<method name='getdata'>
+			<digest>Outputs all tracker data from the tracker outlet.</digest>
+			<description>Outputs all tracker data from the tracker outlet.</description>
+		</method>
+		
+		<method name='getinfo'>
+			<digest>Outputs all tracker info from the tracker outlet.</digest>
+			<description>Outputs all tracker info from the tracker outlet.</description>
+		</method>
 	
 	</methodlist>
 
@@ -36,6 +39,41 @@
 	<!--ATTRIBUTES-->
 
 	<attributelist>
+	
+		<attribute name='port' get='1' set='1' type='long' size='1' >
+			<digest>UDP port to receive PosiStageNet packets on.</digest>
+			<description>UDP port to receive PosiStageNet packets on. Defaults to the PSN standard value of 56565. Should only be changed for custom applications.</description>
+		</attribute>
+		
+		<attribute name='multicast_enabled' get='1' set='1' type='long' size='1' >
+			<digest>Enable receiving multicast packets.</digest>
+			<description>Enable receiving multicast packets. Defaults to enabled, as the PSN standard is based on multicast data. When enabled, unicast packets can still be received. Only disable if unicast data is being used exclusively.</description>
+		</attribute>
+		
+		<attribute name='multicast_group' get='1' set='1' type='symbol' size='1' >
+			<digest>Multicast group IP to receive PosiStageNet packets on.</digest>
+			<description>Multicast group IP to receive PosiStageNet packets on. Defaults to the PSN standard value of 236.10.10.10. Should only be changed for custom applications.</description>
+		</attribute>
+		
+		<attribute name='adapter_ip' get='1' set='1' type='symbol' size='1' >
+			<digest>Network adapter IP to receive PosiStageNet packets on.</digest>
+			<description>Network adapter IP to receive PosiStageNet packets on. Defaults to 0.0.0.0 (any adapter).</description>
+		</attribute>
+		
+		<attribute name='allowed_ips' get='1' set='1' type='symbol' size='1' >
+			<digest>List of IP addreses which PosiStageNet packets can be received from.</digest>
+			<description>List of IP addreses which PosiStageNet packets can be received from. If empty, packets can be received from any IP.</description>
+		</attribute>
+		
+		<attribute name='auto_output' get='1' set='1' type='long' size='1' >
+			<digest>Enable automatic output of PosiStageNet tracker data when packets are received.</digest>
+			<description>Enable automatic output of PosiStageNet tracker data when packets are received.</description>
+		</attribute>
+		
+		<attribute name='allowed_tracker_ids' get='1' set='1' type='long' size='1' >
+			<digest>List of tracker IDs which will be output from the object.</digest>
+			<description>List of tracker IDs which will be output from the object. If empty, all trackers will be output.</description>
+		</attribute>
 
 	</attributelist>
 
